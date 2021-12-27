@@ -91,17 +91,6 @@ header h2
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
-    margin: 5px 10px;
-    font-size: 1em;
-    color: rgb(83, 82, 82);
-    background-color: rgb(245, 245, 248);
-    border: 1px solid;
-    padding: 20px 30px;
-    box-shadow: 3px 3px 3px;
-    border-radius: 3px;
-    list-style-type: circle;
-    max-width: 100%;
-    width: 70%;
 }
 
 .horizontalbox {
@@ -110,17 +99,6 @@ header h2
     flex-direction: row;
     flex-grow: 1;
     justify-content: space-between;
-    margin: 5px 10px;
-    font-size: 1em;
-    color: rgb(83, 82, 82);
-    background-color: rgb(245, 245, 248);
-    border: 1px solid;
-    padding: 20px 30px;
-    box-shadow: 3px 3px 3px;
-    border-radius: 3px;
-    list-style-type: circle;
-    max-width: 100%;
-    width: 70%;
 }
 .boxUl
 {
@@ -246,52 +224,4 @@ h2  {
   {
     font-weight:bold;
     color: blue
-  }
-
-  /* second example */
-.column-layout {
-/*    background-color: rgb(48, 49, 51); */
-/*    margin: 20px auto 0 auto;  */
-    padding: 20px 20px 0px 0px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  
-.column-one {
-    background-color: #FFF;
-    order: 1;
-    flex: 1;
-    box-sizing: border-box;
-  }
-  
-.column-two {
-    background-color: #FFF;
-    order: 2;
-    flex: 1;
-    box-sizing: border-box;
-    margin-left: 20px;
-  }
-  
-.column-picture {
-    background-color: #ffa;
-    position: relative;
-    text-align: center;
-    order: 2;
-    flex-shrink: 3;
-    object-fit: none;
-    vertical-align: bottom;
-    box-sizing: border-box;
-    margin-left: 20px;
-  }
-  /* Centered text */
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.7em;
-    font-style: italic;
-    font-weight: bold;
-    color: rgb(250, 241, 241);
   }
