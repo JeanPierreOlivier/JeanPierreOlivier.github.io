@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Afficher un album de Google Photos</title>
+</head>
+<body>
+
+<script src="https://apis.google.com/js/api:client.js"></script>
+
+<script>
+// Obtenir l'ID de l'album
+//https://photos.google.com/album/AF1QipOnbckY4zPNbJ02QrklxUHOLxMgmDU6Fzu-Wudh
+var albumId = "AF1QipOnbckY4zPNbJ02QrklxUHOLxMgmDU6Fzu-Wudh";
+console.log("hello");
+console.log(albumId);
+// Obtenir l'album
+var album = gapi.client.photos.albums.get(albumId).execute();
+
+// Afficher les photos de l'album en taille réelle
+for (var i = 0; i < album.photos.length; i++) {
+  var photo = album.photos[i];
+  var img = document.createElement("img");
+  img.src = photo.fullUrl;
+  img.style.width = "100%";
+  document.body.appendChild(img);
+}
+console.log(document);
+</script>
+
+</body>
+</html>
